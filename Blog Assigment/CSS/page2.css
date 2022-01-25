@@ -11,7 +11,7 @@
 
 *{
   font-family: 'Poppins', sans-serif;
-  margin:0; padding:0;
+  margin:20; padding:20;
   box-sizing: border-box;
   outline: none; border:none;
   text-decoration: none;
@@ -54,8 +54,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 .container{
-  padding:100px 9%;
-  background: linear-gradient(45deg, deeppink, var(--blue));
+  padding:10px 10%;
+  background: white;
   display: flex;
 }
 
@@ -136,7 +136,7 @@ html::-webkit-scrollbar-thumb{
 
 .container .information .about .box-container .box h3{
   font-size: 15px;
-  padding:10px 0;
+  padding:10px 10;
   color:var(--black);
 }
 
@@ -208,107 +208,10 @@ html::-webkit-scrollbar-thumb{
   border-radius: 50px;
 }
 
-.container .information .skills .box-container .box:first-child .progress:nth-child(1) .bar span{
-  width: 95%;
-}
 
-.container .information .skills .box-container .box:first-child .progress:nth-child(2) .bar span{
-  width: 80%;
-}
 
-.container .information .skills .box-container .box:first-child .progress:nth-child(3) .bar span{
-  width: 65%;
-}
 
-.container .information .skills .box-container .box:first-child .progress:nth-child(4) .bar span{
-  width: 70%;
-}
 
-.container .information .skills .box-container .box:last-child .progress:nth-child(1) .bar span{
-  width: 90%;
-}
-
-.container .information .skills .box-container .box:last-child .progress:nth-child(2) .bar span{
-  width: 75%;
-}
-
-.container .information .skills .box-container .box:last-child .progress:nth-child(3) .bar span{
-  width: 65%;
-}
-
-.container .information .skills .box-container .box:last-child .progress:nth-child(4) .bar span{
-  width: 70%;
-}
-
-.container .information .experience{
-  margin:20px 0;
-}
-
-.container .information .experience .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:15px;
-}
-
-.container .information .experience .box-container .box{
-  padding:20px;
-  border-radius: 5px;
-  flex:1 1 350px;
-  background: var(--light-bg);
-}
-
-.container .information .experience .box-container .box span{
-  color:var(--blue);
-  font-size: 15px;
-}
-
-.container .information .experience .box-container .box h3{
-  color:var(--black);
-  font-size: 17px;
-  padding:5px 0;
-}
-
-.container .information .experience .box-container .box p{
-  color:var(--light-color);
-  line-height: 2;
-  font-size: 13px;
-}
-
-.container .information .contact .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:15px;
-}
-
-.container .information .contact .box-container .box{
-  flex: 1 1 200px;
-  display: flex;
-  align-self: flex-start;
-  gap:10px;
-}
-
-.container .information .contact .box-container .box i{
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  font-size: 15px;
-  border-radius: 50%;
-  background: var(--blue);
-  color:var(--white);
-  text-align: center;
-}
-
-.container .information .contact .box-container .box h3{
-  font-size: 17px;
-  color:var(--black);
-  padding-bottom: 5px;
-}
-
-.container .information .contact .box-container .box p{
-  font-size: 14px;
-  color:var(--light-color);
-  line-height: 2;
-}
 
 @media (max-width:1200px) {
   
@@ -373,10 +276,7 @@ html::-webkit-scrollbar-thumb{
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
+
 .header a:hover {
   background-color: #ddd;
   color: black;
@@ -403,6 +303,26 @@ html::-webkit-scrollbar-thumb{
   }
 }
 
+.column1 {
+    float: left;
+    width: 65%;
+    padding: 30px;
+    height: 1850px; /* Should be removed. Only for demonstration */
+  }
+
+  .column {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    height: 1850px; /* Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 footer{
 	position: fixed;
 	bottom: 0;
@@ -415,7 +335,7 @@ footer{
 
 
 .footer-distributed{
-	background-color: gray;
+	background-color:#D3D3D3;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -424,12 +344,7 @@ footer{
 	margin-top: 80px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
+
 
 /* Footer left */
 
